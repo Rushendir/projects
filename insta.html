@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/insta_logo.jpg" type="image/x-icon">
+    <title>Instagram Login</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        body{
+            background-color: rgb(244, 239, 239);   
+        }
+        h3{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            color: orangered;
+        }
+        .image{
+            text-align: center;
+            border: dashed;
+        }
+        .p1{
+            text-align: center;
+        }
+        button{
+            color: black;
+            background-color:deepskyblue;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 10px;
+            border: none;
+            text-align: center;
+        }
+        .p2{
+            text-align: center;
+        }
+        .p3{
+            text-align: center;
+            text-decoration: none;
+        }
+        .p3 a{
+            text-decoration: none;
+        }
+        .container{
+            background-color:rgba(250, 251, 247, 0.999);
+            border-style: none;
+            width: 40%;
+            margin-left: 30%;
+            margin-top: 35px;
+        }
+        .part1{
+            text-align: center;
+            width: 100%;
+        }
+        .part1 li{
+            display: inline-flex;
+            text-align:justify;
+            color: gray;
+            text-decoration: none;
+            justify-content:space-evenly;
+            text-decoration:inherit;
+        }
+        .part1 li:hover{
+            color: rgb(28, 102, 222);
+            cursor: pointer;
+        }
+        select{
+            border: none;
+            color: gray;
+        }
+        .p5{
+            text-align: center;
+            color: gray;
+        }
+        @media only screen and (max-width:576px){
+           .image{max-width: 100%;}
+            h3{
+                overflow: hidden;
+            }
+            button{
+                overflow:hidden;
+                display: flex;
+                }
+            .p3{overflow: hidden;
+                display: flex;
+               }
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Instagram</h3>
+        <p class="p1"><img src="./images/profile.JPG" width="200" height="200" class="image" alt="image"></p>
+        <p class="p2"><button>Continue as Rushendir</button></p>
+        <p class="p3">Not rushendir? <a href="insta_1.html">Switch accounts</a></p>
+    </div><br><br>
+    <div class="part1">
+        <p class="p4">
+           <ul>
+               <li>Meta</li>          &nbsp;&nbsp;
+               <li>About</li>         &nbsp;&nbsp;
+               <li>Blog</li>          &nbsp;&nbsp;
+               <li>Jobs</li>          &nbsp;&nbsp;
+               <li>Help</li>          &nbsp;&nbsp;
+               <li>API</li>           &nbsp;&nbsp;
+               <li>Privacy</li>       &nbsp;&nbsp;
+               <li>Terms</li>         &nbsp;&nbsp;
+               <li>Top Accounts</li>  &nbsp;&nbsp;
+               <li>HashTags</li>      &nbsp;&nbsp;
+               <li>Location</li>      &nbsp;&nbsp;
+               <li>Instagram Lite</li>&nbsp;&nbsp;
+           </ul>
+        </p>
+        <p class="p5">
+            <select name="SlEnglish">
+               <option value="English">English</option>
+               <option value="Tamil">Tamil</option>
+               <option value="Hindi">Hindi</option>
+               <option value="Telugu">Telugu</option>
+               <option value="Malayalam">Malayalam</option>
+               <option value="kanadam">kanadam</option>
+               <option value="others">others</option>
+           </select> @2022 from meta
+        </p>
+    </div>
+</body>
+</html>
