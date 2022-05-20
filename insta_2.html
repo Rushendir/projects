@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/insta_logo.jpg" type="image/x-icon">
+    <title>Instagram Signup Page</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+        :root {
+            --main-color: #3498db;
+            --success-color: #2ecc71;
+            --error-color: #e74c3c;
+          }
+        *{
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        body{
+            background-color: rgb(244, 239, 239);   
+        }
+        h3,.p01{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            color: orangered;
+        }
+        .p1,.p3{
+            text-align: center;
+            color: black;
+        }
+        .login,.sign{
+            color: rgb(18, 171, 236);
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .container{
+            background-color:rgba(250, 251, 247, 0.999);
+            border-style: none;
+            width: 40%;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 30%;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .form-control{
+            text-align: center;
+        }
+        .form-control {
+           margin-bottom: 10px;
+           padding-bottom: 20px;
+           position: relative;
+        }
+
+      .form-control label {
+          color: #777;
+          margin-bottom: 5px;
+        }
+
+      .form-control input:focus {
+        outline: 0;
+        border-color: #777;
+        }
+
+      .form-control.success input {
+       border-color: var(--success-color);
+       }
+
+      .form-control.error input {
+       border-color: var(--error-color);
+       }
+
+     .form-control small {
+       color: var(--error-color);
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       visibility: hidden;
+       }
+
+     .form-control.error small {
+      visibility: visible;
+      }
+
+     .form button {
+       cursor: pointer;
+       background-color: rgb(134, 134, 237);
+       border: 2px solid var(--main-color);
+       border-radius: 4px;
+       color: black;
+       width: 70%;
+       font-size: 16px;
+       padding: 10px;
+     } 
+     .part3{
+         text-align: center;
+     } 
+     .part3 li{
+        display: inline-flex;
+        text-align:justify;
+        color: gray;
+        text-decoration: none;
+        justify-content:space-evenly;
+        text-decoration:inherit;
+        }
+      .part3 li:hover{
+        color: rgb(28, 102, 222);
+        cursor: pointer;
+        }
+        select{
+            border: none;
+            color: gray;
+        }
+        .p5{
+            text-align: center;
+        }
+        @media only screen and (max-width:576px){
+            img{max-width: 50%;}
+            h3{
+                overflow: hidden;
+            }
+            .container{
+                width: 50%;
+                display: flex;
+                overflow: hidden;
+            }
+            .form-control{
+                max-width: 100%;
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <form id="form" class="form">
+        <h3>Instagram</h3>
+        <p class="p1">Sign up to see photos and videos from your friends.</p>
+        <p class="p2" style="text-decoration:none;"> <img src="./images/fbicon.png" alt="facebook" width="20" height="18"> <a href="#" class="login">Login with Facebook</a></p>
+        <p class="p01">___________or___________</p><br>
+
+        <div class="form-control">
+            <label for="username">Username:</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="username" placeholder="Enter username" />
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="email" placeholder="Enter email or Mobile no" />
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;
+            <input type="password" id="password" placeholder="Enter password" />
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="password2">Confirm Password:</label>&nbsp;&nbsp;&nbsp;
+            <input type="password" id="password2" placeholder="Enter password again" />
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <a href=""><button type="submit">Signup</button></a>
+       </div>
+
+       <p class="p3" style="color:gray ;">By signing up, you agree to our Terms , Data Policy and Cookies Policy .</p>
+
+       <div class="part1">
+         <p class="p4">Have an account? <a href="#" class="sign">Login</a></p>
+         <!-- <p class="p5">Get The App</p> -->
+       </div>
+       <br><br>
+      </form>
+    </div>
+    <p class="p5">Get The App</p>
+    <div class="part2" style="width: 40%; margin-left: 34%";>
+        <p class="p15"><img src="./images/appstore.png" alt="image" width="40%" height="50">   <img src="./images/googleplay.png" alt="image" width="40%" height="50"></p>
+    </div>
+    <div class="part3">
+        <p class="p4">
+           <ul>
+               <li>Meta</li>          &nbsp;&nbsp;&nbsp;
+               <li>About</li>         &nbsp;&nbsp;&nbsp;
+               <li>Blog</li>          &nbsp;&nbsp;&nbsp;
+               <li>Jobs</li>          &nbsp;&nbsp;&nbsp;
+               <li>Help</li>          &nbsp;&nbsp;&nbsp;
+               <li>API</li>           &nbsp;&nbsp;&nbsp;
+               <li>Privacy</li>       &nbsp;&nbsp;&nbsp;
+               <li>Terms</li>         &nbsp;&nbsp;&nbsp;
+               <li>Top Accounts</li>  &nbsp;&nbsp;&nbsp;
+               <li>HashTags</li>      &nbsp;&nbsp;&nbsp;
+               <li>Location</li>      &nbsp;&nbsp;&nbsp;
+               <li>Instagram Lite</li>&nbsp;&nbsp;&nbsp;
+           </ul>
+        </p>
+        <p class="p5">
+            <select name="SlEnglish">
+               <option value="English">English</option>
+               <option value="Tamil">Tamil</option>
+               <option value="Hindi">Hindi</option>
+               <option value="Telugu">Telugu</option>
+               <option value="Malayalam">Malayalam</option>
+               <option value="kanadam">kanadam</option>
+               <option value="others">others</option>
+           </select> @2022 from meta
+        </p>
+    </div>
+
+
+
+
+    <script>
+        const form = document.getElementById("form");
+        const username = document.getElementById("username");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const password2 = document.getElementById("password2");
+    
+    function showError(input, message) {
+          const formControl = input.parentElement;
+          formControl.className = "form-control error";
+          const small = formControl.querySelector("small");
+          small.innerText = message;
+    }
+    
+    function showSuccess(input, message) {
+        const formControl = input.parentElement;
+        formControl.className = "form-control success";
+    }
+    
+    function getFieldName(input) {
+       return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+    }
+    
+    function checkRequired(inputs) {
+     inputs.forEach((input) => {
+      if (input.value.trim() === "") {
+      showError(input, `${getFieldName(input)} is required`);
+    } else {
+      showSuccess(input);
+    }
+    });
+    }
+    
+    function checkLength(input, min, max) {
+    if (input.value.length < min) {
+    showError(
+      input,
+      `${getFieldName(input)} must be at least ${min} characters`
+    );
+    } else if (input.value.length > max) {
+    showError(
+      input,
+      `${getFieldName(input)} must be less than ${max} characters`
+    );
+    } else {
+    showSuccess(input);
+    }
+    }
+    
+    function checkEmail(input) {
+    // Reference: https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(String(input.value.trim()).toLowerCase())) showSuccess(input);
+    else showError(input, `${getFieldName(input)} is not valid`);
+    }
+    
+    function checkPasswordMatch(input1, input2) {
+    if (input1.value !== input2.value) {
+    showError(input2, "Passwords do not match");
+    }
+    }
+    
+    form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkRequired([username, email, password, password2]);
+    checkLength(username, 6, 15);
+    checkLength(password, 8, 25);
+    checkEmail(email);
+    checkPasswordMatch(password, password2);
+    });
+    
+    </script>  
+</body>
+</html>
